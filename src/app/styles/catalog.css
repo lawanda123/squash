@@ -1,0 +1,38 @@
+.departments {
+  display: flex;
+  justify-content: space-around;
+}
+.departments button {
+  width: 130px;
+  height: 65px;
+  font-size: 18px;
+  background-color: #828383;
+  color: #0B0C0C;
+  margin: 20px 0;
+}
+.sign-in {
+  font-size:16px;
+}
+table {
+  width: 98%;
+  margin: 10px 10px 30px;
+  padding-bottom: 30px;
+}
+th {
+  background-color: #333333;
+  padding:3px;
+  color: #F6FDB5;
+  text-align:left;
+}
+tr:nth-child(even) {
+  background-color: #A1A1A1;
+}
+.center {
+  text-align:center;
+}
+.enroll {
+  background-color: white;
+}
+button {
+  font-size:18px;
+}

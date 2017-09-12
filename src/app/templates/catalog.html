@@ -1,0 +1,36 @@
+<div class="departments">
+  <button (click)="applyFilter('CH')">FF</button>
+  <button (click)="applyFilter('PO')">Active</button>
+  <button (click)="applyFilter('SP')">World</button>
+  <button (click)="applyFilter('GEN')">Go</button>
+  <button (click)="applyFilter('')">All</button>
+</div>
+<div>
+  <table>
+    <thead>
+      <th>Club Id</th>
+      <th>Club Name</th>
+      <th>Address</th>
+      <th>Days</th>
+      <th>Time</th>
+      <th class="center">Credits</th>
+      <th class="center">Reservation</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let class of visibleClasses">
+        <td><a [routerLink]="['/catalog/' + class.club.clubName]">{{class.club.clubName}}</a></td>
+        <td><a [routerLink]="['/catalog/' + class.club.clubName]">{{class.club.address}}</a></td>
+        <td>{{class.professor}}</td>
+        <td>{{class.days}}</td>
+        <td>{{class.time}}</td>
+        <td class="center">{{class.club.creditHours}}</td>
+        <td class="enroll center">
+          <button class="sign-in" *ngIf="!dataRepository.currentUser" disabled>Sign In for booking</button>
+          <button *ngIf="dataRepository.currentUser && !class.enrolled && !class.processing" (click)="enroll(class)">UnReserved</button>
+          <button *ngIf="dataRepository.currentUser && class.enrolled && !class.processing" (click)="drop(class)">Reserved</button>
+          <loading-spinner [loading]="class.processing"></loading-spinner>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

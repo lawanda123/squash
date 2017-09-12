@@ -1,0 +1,17 @@
+.logo {
+  height:300px;
+  width: 400px;
+  margin:5px;
+}
+.nav-bar {
+  height: 200px;
+  width: auto;
+  display:flex;
+  align-items: center;
+  background-color: #F8F67E;
+  color: #d3f0fb;
+  font-size:30px;
+}
+.nav-item {
+  padding-left: 150px;
+}
