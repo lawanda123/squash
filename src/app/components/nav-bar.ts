@@ -11,7 +11,9 @@ import { DataRepositoryService } from "../services/data-repository";
       <div class="nav-item"><a [routerLink]="['/catalog']">Malmö</a></div>
       <account-menu [user]="currentUser" (signedOut)="handleSignOut()"></account-menu>
     </div>
+    
 `
+
 })
 
 export class NavBarComponent  {

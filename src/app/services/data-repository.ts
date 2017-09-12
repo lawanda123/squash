@@ -53,16 +53,15 @@ export class DataRepositoryService {
   }
 
   signIn(credentials): Observable<any> {
-    //Never, ever check credentials in client-side code.
-    //This code is only here to supply a fake endpoint for signing in.
+  
     if (credentials.email !== 'me@whitebeards.edu' || credentials.password !== 'super-secret')
       return Observable.throw('Invalid login');
 
     this.currentUser = {
       userId: 'e61aebed-dbc5-437a-b514-02b8380d8efc',
-      firstName: 'Jim',
-      lastName: 'Cooper',
-      email: 'me@whitebeards.edu',
+      firstName: 'lawanda',
+      lastName: 'yousef',
+      email: 'loshashow@gmail.com',
       classes: ['24ab7b14-f935-44c1-b91b-8598123ea54a']
     };
 
@@ -105,95 +104,95 @@ const CLUBS = [{
 const CLUB_CATALOG = [{
   classId: '24ab7b14-f935-44c1-b91b-8598123ea54a',
   club: CLUBS[0],
-  professor: 'Abramius Darksbayn',
+  Addr: 'Storgatan 22',
   seatsAvailable: 23,
   days: 'MWF',
-  time: 11
+  time:'10Am - 10Pm'
 }, {
   classId: 'cebbc5ba-f49a-4708-b3dc-51a346b3231e',
   club: CLUBS[0],
-  professor: 'Philosifus Siebrand',
+  Addr: 'Brunnstavägen7',
   seatsAvailable: 9,
   days: 'MWF',
-  time: 12
+  time: '10Am - 10Pm'
 }, {
   classId: '6130cdd4-071a-4559-8072-35f0fbec5516',
   club: CLUBS[0],
-  professor: 'Abramius Darksbayn',
+  Addr: 'Blekegatan33',
   seatsAvailable: 14,
   days: 'THF',
-  time: 2
+  time: '10Am - 10Pm'
 }, {
   classId: 'dd0343e9-50b2-4f1d-8b87-93c0b34f3d35',
   club: CLUBS[1],
-  professor: 'Antonia Clavell',
+  Addr: 'Växelgatan 11',
   seatsAvailable: 28,
   days: 'THF',
-  time: 11
+  time: '10Am - 10Pm'
 },{
   classId: '7277956e-795f-4c0f-9861-cf03635df5ea',
   club: CLUBS[2],
-  professor: 'Meriel Dufaux',
+  Addr: 'hostgatan 54',
   seatsAvailable: 28,
   days: 'THF',
-  time: 11
+  time: '10Am - 10Pm'
 },{
   classId: '7277956e-795f-4c0f-9861-cf03635df5ea',
   club: CLUBS[3],
-  professor: 'Adranus Klaus',
+  Addr: 'Järngatan 24',
   seatsAvailable: 28,
   days: 'THF',
-  time: 11
+  time: '10Am - 10Pm'
 },{
   classId: '7277956e-795f-4c0f-9861-cf03635df5ea',
   club: CLUBS[4],
-  professor: 'Ragnvald Graupnar',
+  Addr: 'Malmö central',
   seatsAvailable: 28,
   days: 'THF',
-  time: 11
+  time: '10Am - 10Pm'
 },{
   classId: '7277956e-795f-4c0f-9861-cf03635df5ea',
   club: CLUBS[5],
-  professor: 'Philosifus Siebrand',
+  Addr: 'Malmö station',
   seatsAvailable: 28,
   days: 'THF',
-  time: 11
+  time: '10Am - 10Pm'
 },{
   classId: '7277956e-795f-4c0f-9861-cf03635df5ea',
   club: CLUBS[2],
-  professor: 'Phoebe Chabon',
+  Addr: 'Fingatan 33',
   seatsAvailable: 28,
   days: 'THF',
-  time: 11
+  time: '10Am - 10Pm'
 },{
   classId: '7277956e-795f-4c0f-9861-cf03635df5ea',
   club: CLUBS[3],
-  professor: 'Sycily Soule',
+  Addr: 'Summergatan65 33',
   seatsAvailable: 28,
   days: 'THF',
-  time: 11
+  time: '10Am - 10Pm'
 },{
   classId: '7277956e-795f-4c0f-9861-cf03635df5ea',
   club: CLUBS[4],
-  professor: 'Heldebald Cincebeaux',
+  Addr: 'Jöngatan 19 22',
   seatsAvailable: 28,
   days: 'THF',
-  time: 11
+  time: '10Am - 10Pm'
 }, {
   classId: '7277956e-795f-4c0f-9861-cf03635df5ea',
   club: CLUBS[5],
-  professor: 'Gerlinda Weinschroot',
+  Addr: 'Gergatan 31',
   seatsAvailable: 28,
   days: 'THF',
-  time: 11
+  time: '10Am - 10Pm'
 }];
 
 
 const USERS = [{
   userId: 'e61aebed-dbc5-437a-b514-02b8380d8efc',
-  firstName: 'Jim',
-  lastName: 'Cooper',
-  email: 'someones-email@gmail.com',
+  firstName: 'lawanda',
+  lastName: 'yousef',
+  email: 'loshashow@gmail.com',
   password: 'supersecret',
   classes: ['24ab7b14-f935-44c1-b91b-8598123ea54a']
 }];

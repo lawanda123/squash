@@ -14,6 +14,7 @@ import { LoadingComponent } from "./components/loading-spinner";
 import { DataRepositoryService } from "./services/data-repository"
 import { AccountMenuComponent } from "./components/account-menu";
 
+
 @NgModule({
   imports:      [
     BrowserModule,
@@ -29,7 +30,8 @@ import { AccountMenuComponent } from "./components/account-menu";
     RegisterComponent,
     SignInComponent,
     LoadingComponent,
-    AccountMenuComponent
+    AccountMenuComponent,
+    
   ],
   providers: [ DataRepositoryService ],
   bootstrap:    [ AppComponent ]

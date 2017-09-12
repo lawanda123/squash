@@ -8,19 +8,19 @@
 <div>
   <table>
     <thead>
-      <th>Club Id</th>
+      
       <th>Club Name</th>
       <th>Address</th>
       <th>Days</th>
-      <th>Time</th>
-      <th class="center">Credits</th>
+      <th>Opentime</th>
+      <th class="center">Rating</th>
       <th class="center">Reservation</th>
     </thead>
     <tbody>
       <tr *ngFor="let class of visibleClasses">
-        <td><a [routerLink]="['/catalog/' + class.club.clubName]">{{class.club.clubName}}</a></td>
+        
         <td><a [routerLink]="['/catalog/' + class.club.clubName]">{{class.club.address}}</a></td>
-        <td>{{class.professor}}</td>
+        <td>{{class.Addr}}</td>
         <td>{{class.days}}</td>
         <td>{{class.time}}</td>
         <td class="center">{{class.club.creditHours}}</td>
