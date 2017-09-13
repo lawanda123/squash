@@ -66,7 +66,7 @@ import { DataRepositoryService } from '../services/data-repository'
         </div>
         <div class="form-group buttons" >
           <button type="button" (click)="cancel()">Cancel</button>
-          <button class="save" type="submit" [disabled]="signInForm.invalid">Sign In</button>
+          <button class="save" type="submit" >Sign In</button>
         </div>
       </form>
     </div>
