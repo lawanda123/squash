@@ -13,6 +13,7 @@ import { SignInComponent } from "./components/sign-in";
 import { LoadingComponent } from "./components/loading-spinner";
 import { DataRepositoryService } from "./services/data-repository"
 import { AccountMenuComponent } from "./components/account-menu";
+import { ClubComponent } from "app/components/club";
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { AccountMenuComponent } from "./components/account-menu";
     AppComponent,
     NavBarComponent,
     ClubsComponent,
+    ClubComponent,
     RegisterComponent,
     SignInComponent,
     LoadingComponent,
