@@ -70,34 +70,34 @@ export class DataRepositoryService {
 }
 
 const CLUBS = [{
-  clubName: 'PO101',
+  clubName: 'PO',
   address: '24 Active',
-  creditHours: 3,
+  courts: 3,
   description: '...'
 }, {
-  clubName: 'HIS105',
+  clubName: 'Ha',
   address: 'GOO!',
-  creditHours: 4,
+  courts: 5,
   description: '...'
 },{
-  clubName: 'CH101',
+  clubName: 'CH',
   address: 'Malmö ff',
-  creditHours: 4,
+  courts: 2,
   description: '...'
 },{
-  clubName: 'CH205',
+  clubName: 'CH',
   address: 'ff the best',
-  creditHours: 4,
+  courts: 1,
   description: '...'
 },{
-  clubName: 'SP101',
+  clubName: 'SP',
   address: 'Sport World',
-  creditHours: 4,
+  courts: 7,
   description: '...'
 },{
-  clubName: 'SP201',
+  clubName: 'SP',
   address: 'My World',
-  creditHours: 4,
+  courts: 6,
   description: '...'
 }];
 

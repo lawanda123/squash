@@ -23,6 +23,7 @@ import { ClubComponent } from "app/components/club";
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
+    
   ],
   declarations: [
     AppComponent,

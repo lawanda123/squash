@@ -13,7 +13,7 @@
       <th>Address</th>
       <th>Days</th>
       <th>Opentime</th>
-      <th class="center">Rating</th>
+      <th class="center">Courts</th>
       <th class="center">Reservation</th>
     </thead>
     <tbody>
@@ -23,7 +23,7 @@
         <td>{{class.Addr}}</td>
         <td>{{class.days}}</td>
         <td>{{class.time}}</td>
-        <td class="center">{{class.club.creditHours}}</td>
+        <td class="center">{{class.club.courts}}</td>
         <td class="enroll center">
           <button class="sign-in" *ngIf="!dataRepository.currentUser" disabled>Sign In for booking</button>
           <button *ngIf="dataRepository.currentUser && !class.enrolled && !class.processing" (click)="enroll(class)">UnReserved</button>

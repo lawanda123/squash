@@ -13,5 +13,11 @@
   font-size:30px;
 }
 .nav-item {
-  padding-left: 150px;
+  padding-left: 100px;
+}
+p {
+  align-items: center;
+  font-size:18px;
+  padding-left: 100px;
+  
 }
